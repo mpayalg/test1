@@ -2,6 +2,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net"
@@ -9,6 +10,7 @@ import (
 )
 
 func main() {
+	fmt.Println("In MAIN...")
 	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)
